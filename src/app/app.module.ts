@@ -10,7 +10,11 @@ import { AjaxDtComponent } from './ajax-dt/ajax-dt.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ServerSideComponent } from './server-side/server-side.component';
 import { RowClickComponent } from './row-click/row-click.component';
-import { MultipleTablesComponent } from './multiple-tables/multiple-tables.component'
+import { MultipleTablesComponent } from './multiple-tables/multiple-tables.component';
+import { FetchingDtInstancesComponent } from './fetching-dt-instances/fetching-dt-instances.component';
+import { LoadDtOptionsPromiseComponent } from './load-dt-options-promise/load-dt-options-promise.component';
+import { UsingPipesComponent } from './using-pipes/using-pipes.component'
+import { CurrencyPipe, UpperCasePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,10 @@ import { MultipleTablesComponent } from './multiple-tables/multiple-tables.compo
     AjaxDtComponent,
     ServerSideComponent,
     RowClickComponent,
-    MultipleTablesComponent
+    MultipleTablesComponent,
+    FetchingDtInstancesComponent,
+    LoadDtOptionsPromiseComponent,
+    UsingPipesComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +35,7 @@ import { MultipleTablesComponent } from './multiple-tables/multiple-tables.compo
     DataTablesModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [UpperCasePipe,CurrencyPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
