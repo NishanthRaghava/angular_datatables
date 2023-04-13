@@ -15,6 +15,8 @@ import { FetchingDtInstancesComponent } from './fetching-dt-instances/fetching-d
 import { LoadDtOptionsPromiseComponent } from './load-dt-options-promise/load-dt-options-promise.component';
 import { UsingPipesComponent } from './using-pipes/using-pipes.component'
 import { CurrencyPipe, UpperCasePipe } from '@angular/common';
+import { UsingTemplateRefComponent } from './using-template-ref/using-template-ref.component';
+import { RerenderTableComponent } from './rerender-table/rerender-table.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CurrencyPipe, UpperCasePipe } from '@angular/common';
     MultipleTablesComponent,
     FetchingDtInstancesComponent,
     LoadDtOptionsPromiseComponent,
-    UsingPipesComponent
+    UsingPipesComponent,
+    UsingTemplateRefComponent,
+    RerenderTableComponent
   ],
   imports: [
     BrowserModule,

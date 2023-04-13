@@ -26,7 +26,7 @@ export class UsingPipesComponent implements OnInit {
         title:'ID (Money)', 
         data: 'id' , 
         ngPipeInstance:this.currencypipeInstance,
-        ngPipeArgs: ['INR','symbol']
+        ngPipeArgs: ['USD','symbol']
       },
       {
         title:'First name',
@@ -39,7 +39,6 @@ export class UsingPipesComponent implements OnInit {
         ngPipeInstance: this.pipeInstance
       }
     ]
-  }
-   
+  }  
  }
 }
