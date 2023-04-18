@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { DataTablesModule } from "angular-datatables";
@@ -17,6 +18,8 @@ import { UsingPipesComponent } from './using-pipes/using-pipes.component'
 import { CurrencyPipe, UpperCasePipe } from '@angular/common';
 import { UsingTemplateRefComponent } from './using-template-ref/using-template-ref.component';
 import { RerenderTableComponent } from './rerender-table/rerender-table.component';
+import { RouterLinkComponent } from './router-link/router-link.component';
+import { CustomFilteringComponent } from './custom-filtering/custom-filtering.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +34,16 @@ import { RerenderTableComponent } from './rerender-table/rerender-table.componen
     LoadDtOptionsPromiseComponent,
     UsingPipesComponent,
     UsingTemplateRefComponent,
-    RerenderTableComponent
+    RerenderTableComponent,
+    RouterLinkComponent,
+    CustomFilteringComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DataTablesModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [UpperCasePipe,CurrencyPipe],
   bootstrap: [AppComponent]
