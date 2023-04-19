@@ -20,6 +20,9 @@ import { UsingTemplateRefComponent } from './using-template-ref/using-template-r
 import { RerenderTableComponent } from './rerender-table/rerender-table.component';
 import { RouterLinkComponent } from './router-link/router-link.component';
 import { CustomFilteringComponent } from './custom-filtering/custom-filtering.component';
+import { IndividualComponent } from './individual/individual.component';
+import { ButtonExtensionComponent } from './button-extension/button-extension.component';
+import { ColReorderComponent } from './col-reorder/col-reorder.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { CustomFilteringComponent } from './custom-filtering/custom-filtering.co
     UsingTemplateRefComponent,
     RerenderTableComponent,
     RouterLinkComponent,
-    CustomFilteringComponent
+    CustomFilteringComponent,
+    IndividualComponent,
+    ButtonExtensionComponent,
+    ColReorderComponent
   ],
   imports: [
     BrowserModule,
