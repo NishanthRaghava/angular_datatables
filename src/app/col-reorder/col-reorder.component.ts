@@ -23,10 +23,13 @@ export class ColReorderComponent implements OnInit {
         data: 'lastName'
       }],
       dom: 'Rt',
+      //dom options sets the table layout to include the colrecorder control.
       // Use this attribute to enable colreorder
       colReorder: {
         order: [1, 0, 2],
         fixedColumnsRight: 2
+        //The colReorder option enables the colreorder extension and sets the initial 
+        //order of the columns and the number of fixed columns on the right.
       }
     };
   }
