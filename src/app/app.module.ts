@@ -23,6 +23,8 @@ import { CustomFilteringComponent } from './custom-filtering/custom-filtering.co
 import { IndividualComponent } from './individual/individual.component';
 import { ButtonExtensionComponent } from './button-extension/button-extension.component';
 import { ColReorderComponent } from './col-reorder/col-reorder.component';
+import { ResponsiveExtensionComponent } from './responsive-extension/responsive-extension.component';
+import { SelectExtensionComponent } from './select-extension/select-extension.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { ColReorderComponent } from './col-reorder/col-reorder.component';
     CustomFilteringComponent,
     IndividualComponent,
     ButtonExtensionComponent,
-    ColReorderComponent
+    ColReorderComponent,
+    ResponsiveExtensionComponent,
+    SelectExtensionComponent
   ],
   imports: [
     BrowserModule,

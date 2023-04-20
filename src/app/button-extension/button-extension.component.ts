@@ -70,19 +70,41 @@ export class ButtonExtensionComponent implements OnInit {
       // Declare the use of the extension in the dom parameter
       dom: 'Bfrtip',
       // Configure the buttons
+      // buttons: [
+      //   'columnsToggle',
+      //   'colvis',
+      //   'copy',
+      //   'print',
+      //   'excel',
+      //   {
+      //     text: 'Some button',
+      //     key: '1',
+      //     action: function (e, dt, node, config) {
+      //       alert('Button activated');
+      //     }
+      //   }
+      // ]
       buttons: [
-        'columnsToggle',
-        'colvis',
-        'copy',
         'print',
+        'spacer',
+        'copy',
         'excel',
+        // {
+        //   extend: 'pdfHtml5',
+        //   download: 'open'
+        // },
+        'pdf',
+        'csv',
         {
-          text: 'Some button',
-          key: '1',
-          action: function (e, dt, node, config) {
-            alert('Button activated');
-          }
-        }
+          extend: 'spacer',
+          style: 'bar'
+        },
+        'copy',
+        'colvis',
+        'searchBuilder',
+        'selectRows',
+        'selectColumns',
+        'selectCells'
       ]
     };
   }
